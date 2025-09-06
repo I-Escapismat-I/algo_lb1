@@ -35,7 +35,7 @@ class StudentDatabase
     {
         for(auto & student : students)
         {
-            if(student.name.find(name))
+            if(student.name.find(name) == 0)
             {
                 std::cout << "Name: " << student.name << ", Age: " << student.age << ", GPA: " << student.gpa << std::endl;
             }
@@ -51,8 +51,9 @@ int main()
     StudentDatabase db;
     db.addStudent({"Alice", 20, 3.5});
     db.addStudent({"Bob", 22, 3.7});
-    db.addStudent({"Charlie", 21, 3.9});
-    db.findStudentName("Bob");
+    db.addStudent({"Bad", 21, 3.9});
+    db.addStudent({"Booby", 21, 3.9});
+    db.findStudentName("Bo");
 
     return 0;
 }
