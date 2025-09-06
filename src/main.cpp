@@ -31,11 +31,11 @@ class StudentDatabase
             std::cout << "Name: " << student.name << ", Age: " << student.age << ", GPA: " << student.gpa << std::endl;
         }
     }
-    void findStudentName(const::string & name) const
+    void findStudentName(const std::string & name) const
     {
         for(auto & student : students)
         {
-            if(!student.find(name))
+            if(student.name.find(name))
             {
                 std::cout << "Name: " << student.name << ", Age: " << student.age << ", GPA: " << student.gpa << std::endl;
             }
