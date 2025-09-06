@@ -49,7 +49,6 @@ int main()
 {
 
     StudentDatabase db;
-    db.addStudent({"Alice", 20, 3.5});
     db.addStudent({"Bob", 22, 3.7});
     db.addStudent({"Bad", 21, 3.9});
     db.addStudent({"Booby", 21, 3.9});
